@@ -1,0 +1,169 @@
+/* ------------------- Global Reset ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: #1e1e1e;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.star{
+  color: #ff4500;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.highlight{
+  color: #ff4500;
+}
+
+/* ------------------- About Section ------------------- */
+.about-section {
+  position: relative;
+  padding: 6rem 1.25rem 5rem;
+  text-align: center;
+  width: 100%;               /* Full width */
+  max-width: 1200px;         /* Constrained center */
+  margin: 0 auto;            /* Centers section */
+}
+.about-heading {
+  font-family: 'Figtree', sans-serif;
+  margin-top: 25px;
+    font-size: 70px;
+    line-height: 1.2;
+  }
+
+.about-badge{
+  display: inline-block;
+  background: #f5f5f5;
+  font-weight: 600;
+  /* border: #1e1e1e solid 1px; */
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ------------------- Stats Pill Wrapper ------------------- */
+.about-stats-pill {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* ------------------- Stats Box ------------------- */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Always 3 in a row */
+  gap: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 2rem;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 1.75rem;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto; /* Ensure centering */
+}
+
+/* ------------------- Each Stat ------------------- */
+.stat {
+  padding: 1rem 0.75rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.stat:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stat:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.stat:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ff4500;
+  margin-bottom: 0.3rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: black;
+}
+
+/* ------------------- Animation ------------------- */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1rem;
+  }
+
+  .about-stats {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .value {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 3rem 1rem;
+    line-height: 1.5;
+  }
+.about-heading {
+  margin-top: 25px;
+    font-size: 1.5rem;
+  }
+  .stat {
+    padding: 0.5rem 0.3rem;
+  }
+
+  .value {
+    font-size: 1.3rem;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+}

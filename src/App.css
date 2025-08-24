@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  /* z-index: 2000; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9; /* Base color */
+  color: #1e1e1e;
+  line-height: 1.6;
+  margin-top: 150px;
+  width: 100%;
+
+  /* 👇 dotted grid background */
+  background-image: radial-gradient(#d3d3d3 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
