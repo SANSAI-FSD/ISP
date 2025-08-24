@@ -3,7 +3,7 @@ import "./RecentWorks.css";
 import BEAT from '../../assets/videos/BEAT.mp4';
 import BROTO from '../../assets/videos/BROTOTYPE.mp4';
 import V1 from '../../assets/videos/V1.mp4';
-import threeD from '../../assets/gif/resolve.gif'
+import threeD from '../../assets/gif/resolve-unscreen.gif'
 import { color } from "framer-motion";
 
 const RecentWorks = () => {
