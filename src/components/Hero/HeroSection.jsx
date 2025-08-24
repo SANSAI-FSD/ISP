@@ -76,7 +76,7 @@ const HeroSection = () => {
        <h1>Video Edits <img src="creator-avatars.png"  className="avatar-images" /><br></br>That
        <span className='standsout'> Stands Out!</span>
        </h1>
-        <p className="subheading"> Hook faster. Edit smarter. Grow your audience with <br></br>scroll-stopping YouTube videos. </p>
+        <p className="subheading"> Hook faster. Edit smarter. Grow your audience with scroll-stopping YouTube videos. </p>
         <button className="book-call-btn">
   Book a Call  
   <img 
