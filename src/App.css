@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   /* z-index: 2000; */
@@ -7,6 +8,7 @@
 
 body {
   background-color: #f9f9f9; /* Base color */
+  font-family: 'Figtree', sans-serif;
   color: #1e1e1e;
   line-height: 1.6;
   margin-top: 150px;

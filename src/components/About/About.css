@@ -44,7 +44,7 @@ button {
 .about-heading {
   font-family: 'Figtree', sans-serif;
   margin-top: 25px;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.2;
   }
 
@@ -166,4 +166,63 @@ button {
   .label {
     font-size: 0.8rem;
   }
+}
+
+/* Base heading */
+.about-heading {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+/* Scroll into view fade-in */
+.about-heading {
+  animation: fadeInUp 1.2s ease forwards;
+  animation-timeline: view();         /* Runs when entering viewport */
+  animation-range: entry 0% cover 40%; 
+}
+
+/* Highlight animation loop */
+.highlight {
+  display: inline-block;
+  position: relative;
+  color: #ff4500;
+  font-weight: bold;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/* Infinite typing illusion */
+.highlight::after {
+  content: "Fast";
+  animation: typingWords 6s steps(10, end) infinite;
+  border-right: 2px solid #ff4500;
+  white-space: nowrap;
+  padding-right: 4px;
+}
+
+/* Fade-in on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cycle words infinitely */
+@keyframes typingWords {
+  0%   { content: "Fast"; }
+  25%  { content: "Reliable"; }
+  50%  { content: "Obsessed"; }
+  75%  { content: "Fast"; }
+  100% { content: "Fast"; }
 }

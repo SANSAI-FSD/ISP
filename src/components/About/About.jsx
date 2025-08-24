@@ -13,10 +13,10 @@ const AboutSection = () => {
 
       {/* Heading */}
       <h1 className="about-heading">
-        We’re the Editing Partners Behind <br />the 
-        Creators Who Actually<br /> Grow with Results. <br />
-        <span className="highlight">Fast, Reliable</span> and{" "}
-        <span className="highlight">Obsessed.</span>
+        We’re the Editing Partners Behind the 
+        Creators <br/>Who Actually Grow with Results. <br />
+        <span className="highlight"></span> {" "}
+        
       </h1>
 
      

@@ -57,8 +57,9 @@
 import React from 'react'
 import './HeroSection.css';
 
-import phoneimg from '../../assets/telephone-call.png'
+import phoneimg from '../../assets/incoming-call.gif'
 import Timeline from '../../assets/gif/Timeline .gif'
+import Leftgif from '../../assets/personal-development.png'
 
 
 const HeroSection = () => {
@@ -73,7 +74,7 @@ const HeroSection = () => {
        </div> */}
 
        <div className='hero-headings'>
-       <h1>Video Edits <img src="creator-avatars.png"  className="avatar-images" /><br></br>That
+       <h1>Video Edits That
        <span className='standsout'> Stands Out!</span>
        </h1>
         <p className="subheading"> Hook faster. Edit smarter. Grow your audience with scroll-stopping YouTube videos. </p>
@@ -93,7 +94,7 @@ const HeroSection = () => {
 
        <div className='hero-testimonials'>
          <div className="testimonial-card mark">
-          <img src="mark-avatar.png" alt="Mark Avatar" className="testimonial-avatar" />
+          <img src= {Leftgif} alt="Mark Avatar" className="testimonial-avatar" />
           <div className="testimonial-content">
             <span className="testimonial-handle">@mark_locus</span>
             <p>This edit boosted my retention rate by 35%!</p>
@@ -106,7 +107,7 @@ const HeroSection = () => {
       </div>
 
       <div className="testimonial-card mark">
-          <img src="mark-avatar.png" alt="Mark Avatar" className="testimonial-avatar" />
+          <img src={Leftgif} alt="Mark Avatar" className="testimonial-avatar" />
           <div className="testimonial-content">
             <span className="testimonial-handle">@mark_locus</span>
             <p>This edit boosted my retention rate by 35%!</p>

@@ -10,12 +10,17 @@ const RecentWorks = () => {
   
   return (
     <section className="recent-works">
-    <div className="gif-containers left-gifs">
+    {/* <div className="gif-containers left-gifs">
             <img src={threeD} alt="Left GIFS" />
-          </div>
-      <div className="section-tag">★ <span className="selectedwrk">Selected Works</span></div>
+          </div> */}
 
-      <h2 className="section-title">
+          
+      <div className="section-tag">★ <span className="selectedwrk">Selected Works</span></div>
+        
+      <div className="section-header">
+      <img src={threeD} alt="Left GIFS" className="headerlogo" />
+        <div>
+          <h2 className="section-title">
         Our Recent Edits <span>in Action</span>
       </h2>
 
@@ -23,21 +28,12 @@ const RecentWorks = () => {
         From tech reviews to gameplay breakdowns — here’s a glimpse of how we
         turn raw footage into binge-worthy content that resonates.
       </p>
+        </div>
+      </div>
 
       <div className="works-container">
         {/* Card 1 */}
         <div className="work-card fade-in">
-          {/* <div className="video-wrapper" onMouseEnter={() => playVideo()} 
-  onMouseLeave={() => pauseVideo()}
->
-            <iframe
-              src={BROTO}
-              title="video1"
-              frameBorder="0"
-              allowFullScreen
-              allow="autoplay; encrypted-media"
-            ></iframe>
-          </div> */}
           <div className="video-wrapper">
              <video
               src={BROTO}          // your .mp4 file

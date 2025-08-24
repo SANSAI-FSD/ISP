@@ -136,6 +136,9 @@
   .gif-containers {
     display: none;
   }
+  .headerlogo{
+    display: none;
+  }
 }
 
 .video-wrapper {
@@ -177,3 +180,19 @@
   
   width: 30px;
 }
+
+.section-header{
+  display: flex;
+  width: 100%;
+  
+ justify-content: center;
+}
+
+.headerlogo{
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  
+}
+
+
