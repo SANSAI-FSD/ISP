@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import "./About.css";
 import Lottie from "lottie-react";
 import videoAnimation from "../../assets/json/vedio.json"; 
-import viewsAnimation from "../../assets/json/views.json"; 
+import viewsAnimation from "../../assets/json/Views.json"; 
 import creativeAnimation from "../../assets/json/Creative.json"; 
 
 const About = () => {
