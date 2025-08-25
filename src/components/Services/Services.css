@@ -140,7 +140,7 @@
 }
 
 /* entrance anim */
-.fade-in{ opacity:0; transform: translateY(14px); animation: svcIn .6s ease forwards; }
+.fade-in{ opacity:0; transform: translateY(14px); animation: svcIn 3s ease forwards; }
 @keyframes svcIn{ to{ opacity:1; transform: none; } }
 
 /* responsive */
@@ -154,3 +154,5 @@
   .svc-col{ width:100%; }
   .svc-card.tall, .svc-card.short{ min-height: auto; }
 }
+
+
