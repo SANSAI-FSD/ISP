@@ -88,6 +88,10 @@ h1 {
   z-index: 1;
 }
 
+.ISP{
+  color: #ff4500;
+}
+
 /* .highlight {
   color: #f5a623;
   font-weight: 900;
@@ -287,7 +291,7 @@ h1 {
   .hero-headings button {
     margin: 0 auto 1rem;
     display: block;
-    padding: 0.9rem 1.8rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
     border-radius: 999px;
     background: #000;
@@ -396,4 +400,12 @@ h1 {
 .gif-container img {
   width: 600px;
   height: auto;
+}
+
+.phone-icon{
+  width: 20px;   /* adjust size */
+  height: 20px;
+  color: #ff4500;
+  object-fit: contain;
+  background-color: #000;
 }

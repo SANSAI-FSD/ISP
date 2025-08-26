@@ -101,7 +101,7 @@
     display: flex;
   }
   .logoname {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 .logoimg{

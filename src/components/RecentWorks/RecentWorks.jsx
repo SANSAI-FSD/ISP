@@ -75,6 +75,8 @@ const RecentWorks = () => {
                 className="hover-video"
                 onMouseEnter={(e) => e.target.play()}
                 onMouseLeave={(e) => e.target.pause()}
+                onTouchStart={(e) => e.target.play()}
+                onTouchEnd={(e) => e.target.pause()}
               />
             </div>
             <div className="work-info">

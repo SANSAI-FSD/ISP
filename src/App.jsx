@@ -8,11 +8,14 @@ import PricingSection from "./components/Pricing/PricingSection"
 import Footer from "./components/Footer/Footer"
 import "./App.css"
 import React from "react"
+import Background from "./Background/Background"
+
 
 
 const App = () => {
   return (
     <div>
+      <Background />
       <Navbar />
       <HeroSection />
       <MarqueeSection />
@@ -20,6 +23,7 @@ const App = () => {
       <RecentWorks />
       <Services />
       <PricingSection />
+      
       <Footer />
       
 

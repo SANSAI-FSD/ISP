@@ -6,7 +6,10 @@ const PricingSection = () => {
   return (
     <section className="pricing">
       <div className="pricing-header">
-        <span className="tag">✨ Pricing</span>
+      <div className="svc-badge">
+        <span className="star">✦</span> Services
+      </div>
+       
         <h2>Simple Plans</h2>
         <p>
           Whether you’re uploading weekly or scaling fast, we’ve got

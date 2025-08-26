@@ -1,4 +1,4 @@
-
+import GradientText from './GradientText/GradientText';
 import React, { useState } from "react";
 import logo from '../../assets/logo.jpg';
 import "./Navbar.css";
@@ -10,7 +10,17 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="logo"><img  className="logoimg" src={logo}/></div>
-      <span className="logoname" >ISP AGENCY</span>
+      {/* <span className="logoname" >ISP AGENCY</span> */}
+
+          <GradientText
+          colors={["#ff9140", "#ff4040", "#ff9140", "#ff4040", "#ff9140"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class logoname"
+            >
+              ISP AGENCY
+          </GradientText>
+
       {/* Menu Links */}
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li><a href="#services">Services</a></li>

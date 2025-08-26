@@ -1,5 +1,5 @@
 .recent-works {
-  padding: 60px 20px;
+  padding: 15px 20px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
@@ -132,6 +132,9 @@
   }
   .work-card {
     flex: 1 1 100%;
+  }
+  .recent-works{
+    margin-top: 0px;
   }
   .gif-containers {
     display: none;
